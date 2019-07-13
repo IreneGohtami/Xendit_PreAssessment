@@ -1,12 +1,13 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-// var mongodb = require('mongodb').MongoClient;
-// var bcrypt = require('bcrypt');
-var config = require('./config');
-var app = express();
-// var db;
+const express = require('express');
+const bodyParser = require('body-parser');
+// const mongodb = require('mongodb').MongoClient;
+// const bcrypt = require('bcrypt');
+const config = require('./config');
+const app = express();
+const pkg = require('./package.json');
+// const db;
 
-// var dbURL = (config.use_local_db==1 ? config.local_db_url : config.remote_db_url);
+// const dbURL = (config.use_local_db==1 ? config.local_db_url : config.remote_db_url);
 // mongodb.connect(dbURL, {useNewUrlParser: true}, function(err, client) {
 // 	if (err) throw err;
 // 	db = client.db(config.db_name);
@@ -22,7 +23,7 @@ app.use (function (error, req, res, next){ //catch bodyParser error
 });
 
 app.get('/', function(req, res) {
-    res.status(200).send('Hello. How can I help you?');
+    res.status(200).send('Hellooo. Anyone there? ' + pkg.version);
 })
 
 /*COMMENTS*/
@@ -128,3 +129,9 @@ app.get('/', function(req, res) {
 //
 app.listen(config.server_port);
 //console.log("App listening on port " + config.server_port);
+
+
+process.on('uncaughtException', (err) => {
+	console.error('EXECPTION::', err)
+  });
+  
