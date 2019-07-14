@@ -1,4 +1,4 @@
-Backend API for Github Comments [GET, POST, DELTE] & Members [GET, POST]
+Backend API for Github Comments [GET, POST, DELTE] & Members [GET, POST].
 Developed in NodeJS (with Express) & MongoDB
 Default database configuration is set to remote URL
 
