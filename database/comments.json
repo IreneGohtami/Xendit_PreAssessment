@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5d2891507bce023218dfffa7"},"org_name":"google","comment":"I'm your one and only search engine.","status":{"$numberInt":"1"}}
+{"_id":{"$oid":"5d28969a1b42a45680cdec7f"},"org_name":"xendit","comment":"This is comment #2","status":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d2896af1b42a45680cdec80"},"org_name":"xendit","comment":"This is comment #1","status":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d28a9b3339d9a078873c6c9"},"org_name":"xendit","comment":"Xendit comment no #3","status":{"$numberInt":"1"}}
+{"_id":{"$oid":"5d28a9b7339d9a078873c6ca"},"org_name":"xendit","comment":"Xendit comment no #4","status":{"$numberInt":"1"}}
+{"_id":{"$oid":"5d28a9bb339d9a078873c6cb"},"org_name":"xendit","comment":"Xendit comment no #5","status":{"$numberInt":"1"}}
