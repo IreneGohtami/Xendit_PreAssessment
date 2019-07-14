@@ -25,11 +25,11 @@ function postComments(req, res) {
 		objCol.insertOne(document, function(err, res2) {
 			if(err) throw err;
 			console.log("Comment inserted.");
-			res.status(200).send('Comment: "' + comment + '" for ' + req.params.orgName + ' has been saved.');
+			res.status(201).send({Comment: ' ' + comment + ' for ' + req.params.orgName + ' has been saved.'});
 		});
 	}
 	else{
-		res.status(200).send('Error: Please pass a "comment" in a valid JSON format in the request body. Example: {"comment":"This is a comment"}');
+		res.status(200).send({Error: "Please pass a 'comment' in a valid JSON format in the request body. Example: {'comment':'This is a comment'}"});
 	}
 }
 

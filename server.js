@@ -18,6 +18,7 @@ conn.connectToServer( function( err, client ) {
 	}
 	app.config = config;
 	console.log('Database connected.');
+	app.emit("app_started");
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));
