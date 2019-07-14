@@ -1,6 +1,6 @@
 Backend API for Github Comments [GET, POST, DELTE] & Members [GET, POST].
 Developed in NodeJS (with Express) & MongoDB.
-Default database configuration is set to remote URL
+Default database configuration is set to remote URL.
 
 To run on localhost:
 - Run: "npm install" on local repository root folder
